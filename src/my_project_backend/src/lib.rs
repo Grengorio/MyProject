@@ -18,6 +18,19 @@ fn get_chat() -> Vec<String> {
 }
 
 #[ic_cdk::query]
+fn get_msg(name: String) -> String {
+    let a = String::from("Siema");
+    let b = &a;
+    let c = a;
+
+    format!("Hello, {}!", name)
+}
+
+#[ic_cdk::query]
 fn greet(name: String) -> String {
+    let a = String::from("Siema");
+    let b = &a;
+    let c = a;
+
     format!("Hello, {}!", name)
 }
