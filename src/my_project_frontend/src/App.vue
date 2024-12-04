@@ -28,6 +28,7 @@ getChat()
       <input id="newMsg" alt="newMsg" type="text" />
       <button type="submit">Click Me!</button>
     </form>
+    <button @click="getChat()">refresh</button>
     <section id="chat">
       <div v-for="msg in chat">{{ msg }}</div>
     </section>
